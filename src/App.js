@@ -1,13 +1,14 @@
 import React from 'react';
 import './App.css';
-import Nav from './components/nav'
+import Navbar from './components/Navbar'
+import Container from './components/Container'
 
 function App() {
   return (
    <div>
-    <Nav/>
+    <Navbar/>
       <div className="center container">
-        
+        <Container/>
       </div>
     </div>
   );
