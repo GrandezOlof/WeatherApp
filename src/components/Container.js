@@ -32,8 +32,9 @@ export default class Container extends React.Component {
                 Pressure: json.main.pressure,
                 Wind: json.wind.speed,
                 Icon: json.weather[0].icon,
-                WeatherDescription: json.weather[0].description
-
+                WeatherDescription: json.weather[0].description,
+                Max: json.main.temp_max,
+                Min: json.main.temp_min,
             }));
             //forecast API
             fetch(`${url}forecast?lat=${p.coords.latitude}&lon=${p.coords.longitude}&appid=${apiKey}&units=metric`)
@@ -60,7 +61,9 @@ export default class Container extends React.Component {
                 Pressure: json.main.pressure,
                 Wind: json.wind.speed,
                 Icon: json.weather[0].icon,
-                WeatherDescription: json.weather[0].description
+                WeatherDescription: json.weather[0].description,
+                Max: json.main.temp_max,
+                Min: json.main.temp_min,
             }));
             //forecast API
             fetch(`${url}forecast?q=${city}&appid=${apiKey}&units=metric`)
@@ -95,7 +98,9 @@ export default class Container extends React.Component {
             Pressure: json.main.pressure,
             Icon: json.weather[0].icon,
             Wind: json.wind.speed,
-            WeatherDescription: json.weather[0].description
+            WeatherDescription: json.weather[0].description,
+            Max: json.main.temp_max,
+            Min: json.main.temp_min
         }));
         //forecast API
         fetch(`${url}forecast?q=${city}&appid=${apiKey}&units=metric`)
@@ -129,7 +134,9 @@ export default class Container extends React.Component {
         return (
             <div>
             <SearchBar search={this.handleSearch}/>
-            <Weather weather={this.state.Weather} 
+            <Weather weather={this.state.Weather}
+            max={this.state.Max}
+            min={this.state.Min}
             temp={this.state.Temp}
             country={this.state.Country}
             humidity={this.state.Humidity}

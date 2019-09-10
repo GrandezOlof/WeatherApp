@@ -13,10 +13,10 @@ export default class WeatherList extends React.Component{
                 <div className="row" key={count}>
                     <div className="card-content">
                         <div className="text">
-                        <span className="card-title text">{weather.dt_txt.slice(5, -9)}</span>
+                        <span className="card-title text">{weather.dt_txt.slice(0, -8)}</span>
                             <p>+ {count} {count === 1 ? "day" : "days" }  </p>
                             <img alt="" src={icon} />
-                            <p>{weather.weather.description }</p>
+                            <p>{weather.main.temp} °C</p>
                             <p>
                                 <span>Max: {weather.main.temp_max} °C</span>
                                 <br/>

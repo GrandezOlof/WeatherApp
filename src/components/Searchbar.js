@@ -5,9 +5,9 @@ export default class SearchBar extends React.Component{
         return(
             <form onSubmit={this.props.search}>
                 <br/>
-                <h6 className="white-text">Weather Conditions In Your City.</h6>
+                <h6 className="white-text">Weather In Your City.</h6>
                 <div className="input-field">
-                    <input className="black-text" id="search" required type="search" name="city" placeholder="Search City"/>
+                    <input className="black-text" id="search" required type="search" name="city" placeholder="Search"/>
                     <i class="material-icons">close</i>
                 </div>
             </form>

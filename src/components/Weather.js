@@ -11,12 +11,15 @@ export default class Weather extends React.Component{
                         <h3 className="text">{this.props.weather.name}</h3>
                         <h5 className="text">{this.props.country}</h5>
                         <h6 className="text"><Time/></h6>
-                        <h6 className="text">Temperature: {this.props.temp}°C</h6>
+                        <h5 className="text">Temperature: {this.props.temp} °C</h5>
                         <img src={`http://openweathermap.org/img/wn/${this.props.icon}.png`} alt="weather icon"/>
+                        <h6 className="text">Max: {this.props.max} °C</h6>
+                        <h6 className="text">Min: {this.props.min} °C</h6>
                         <h6 className="text">Humidity: {this.props.humidity}%</h6>
                         <h6 className="text">Description: {this.props.description}</h6>
                         <h6 className="text">Pressure: {this.props.pressure} hPa</h6>
                         <h6 className="text">Wind: {this.props.wind} m/s</h6>
+                        <br/>
                         <h6 className="text">Add to Favorites</h6>
                         <button onClick={this.props.setFavorite} className="waves-effect waves-light btn black marginFix">{this.props.weather.name}</button>
                            
