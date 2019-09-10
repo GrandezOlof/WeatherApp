@@ -25,3 +25,26 @@ html {
 .nav-extended{
   background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/4BrdbiSFlik14dmb5/time-lapse-moving-cloud-on-blue-sky-background_4s9ilq19e__F0000.png");
 }
+
+.input-field input[type=search]{
+  width: 50%;
+  margin: 0 auto;
+}
+.input-field input[type=search] ~ .mdi-navigation-close, .input-field input[type=search] ~ .material-icons {
+  left: 40rem
+}
+@media only screen and (max-width: 1200px) {
+  .input-field input[type=search] ~ .mdi-navigation-close, .input-field input[type=search] ~ .material-icons{
+    left: 38rem
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .input-field input[type=search] ~ .mdi-navigation-close, .input-field input[type=search] ~ .material-icons{
+    left: 30rem
+  }
+}
+@media only screen and (max-width: 800) {
+  .input-field input[type=search] ~ .mdi-navigation-close, .input-field input[type=search] ~ .material-icons{
+    left: 15rem
+  }
+}
