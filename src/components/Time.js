@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 export default class Time extends React.Component {
     constructor(props) {
         super(props);
@@ -13,6 +14,7 @@ export default class Time extends React.Component {
         1000
         );
     }
+
     componentWillUnmount() {
         clearInterval(this.intervalID);
     }

@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
-import Navbar from './components/Navbar'
-import Container from './components/Container'
+import Navbar from './components/Navbar';
+import Container from './components/Container';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

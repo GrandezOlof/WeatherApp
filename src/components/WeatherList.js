@@ -10,11 +10,11 @@ export default class WeatherList extends React.Component{
                 let icon = "http://openweathermap.org/img/w/" + weather.weather[0].icon + ".png";
                 count++;
                 return(
-                <div className="row" key={count}>
+                <div className='cardStyleF' key={count}>
                     <div className="card-content">
                         <div className="text">
                         <span className="card-title text">{weather.dt_txt.slice(0, -8)}</span>
-                            <p>+ {count} {count === 1 ? "day" : "days" }  </p>
+                        <br/><br/>
                             <img alt="" src={icon} />
                             <p>{weather.main.temp} °C</p>
                             <p>
@@ -28,9 +28,10 @@ export default class WeatherList extends React.Component{
                 )
             })
             return(
-                <div className="valign-wrapper center">
+                <div className="justify-content-center row">
                     {weatherList}
                 </div>
             )
     }
 }
+

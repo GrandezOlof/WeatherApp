@@ -16,11 +16,6 @@
   padding: 5px;
 }
 
-html {
-  box-sizing:
-  border-box;
-  background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/4BrdbiSFlik14dmb5/time-lapse-moving-cloud-on-blue-sky-background_4s9ilq19e__F0000.png");
-}
 
 .nav-extended{
   background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/4BrdbiSFlik14dmb5/time-lapse-moving-cloud-on-blue-sky-background_4s9ilq19e__F0000.png");
@@ -47,4 +42,16 @@ html {
   .input-field input[type=search] ~ .mdi-navigation-close, .input-field input[type=search] ~ .material-icons{
     left: 15rem
   }
+}
+
+.listF{
+  float:left;
+  text-align: center;
+}
+
+.cardStyleF{
+  margin: 10px;
+  padding:10px;
+  background-color: transparent !important;
+
 }
